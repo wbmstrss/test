@@ -1,0 +1,43 @@
+AuthName "Restricted Area: use webmistress/webmistress to view" 
+AuthType Basic 
+AuthUserFile /var/www/vhosts/webmistress-dev.com/htpasswd/.htpasswd 
+AuthGroupFile /dev/null 
+require valid-user
+
+<IfModule mod_expires.c>
+
+# Enable expirations
+ExpiresActive On
+
+# Default directive
+ExpiresDefault "access plus 1 month"
+
+<FilesMatch "\.(ico|gif|jpg|png|jpeg)$">
+  ExpiresDefault "access plus 6 months"
+</FilesMatch>
+
+# CSS
+ExpiresByType text/css "access 1 month"
+
+# Javascript
+ExpiresByType application/javascript "access plus 1 year"
+
+</IfModule>
+
+#turn on Rewrite Engine
+RewriteEngine On
+ErrorDocument 400 /400.php
+ErrorDocument 401 /401.php
+ErrorDocument 403 /403.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php
+
+#redirect .html to .php
+#RewriteRule ^(.*)\.html$ $1.php [L]
+
+Redirect 301 /index.html /index.php
+Redirect 301 /technology.html /technology.php
+Redirect 301 /technology/wnt-pathway.html /technology/wnt-pathway.php
+Redirect 301 /contact.html /contact.php
+Redirect 301 /contact/careers.html /contact/careers.php
+Redirect 301 /contact/contact-info.html /contact.php
