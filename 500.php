@@ -8,7 +8,7 @@
 </head>
 
 <body>
-<h1>Server Error</h1>
+<h1>Serveer Error</h1>
 
 <p>Ooops, something bad has happened and we aren't sure what caused the problem.</p>
 
