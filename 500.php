@@ -10,7 +10,7 @@
 <body>
 <h1>Server Error</h1>
 
-<p>Oops, something bad has happened and we aren't sure what caused the problem.</p>
+<p>Ooops, something bad has happened and we aren't sure what caused the problem.</p>
 
 <p>We think the best thing to do right now is to start again from the <a href="http://www.samumed.com/index.php">home page</a>.</p>
 
