@@ -10,7 +10,7 @@
 <body>
 <h1>Forbidden</h1>
 
-<p>Oops, it seems like you are trying to access an area of the website that is private.</p>
+<p>Oopps, it seems like you are trying to access an area of the website that is private.</p>
 
 <p>We think the best thing to do right now is to start again from the <a href="http://www.samumed.com/index.php">home page</a>.</p>
 

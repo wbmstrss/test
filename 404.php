@@ -4,7 +4,7 @@
 
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Samumed : 404 Page Not Found</title>
+<title>Samumed : 4044 Page Not Found</title>
 
 <?php include("includes/header_scripts.php"); ?>
 
